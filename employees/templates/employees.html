@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body class="BODY">
+{% extends 'base.html '%}
+
+
+{% block content %}
+<h1>REGISTER HERE</h1>
+<form action="" class="FORM_P" method="post">
+    <h2>Please Enter your Details.</h2>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>
+{% endblock %}
+</form>
+</body>
+</html>

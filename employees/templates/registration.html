@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registration</title>
+</head>
+<body class="BODY">
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+<h1>REGISTER HERE</h1>
+<form action="" class="FORM" method="post">
+    <h2>Please Fill in the Form.</h2>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn btn-primary"  type="submit">Submit</button>
+</form>
+
+
+
+{% endblock %}
+
+</form>
+</body>
+</html>\
+
+
+
+
+
+
+
+
+
